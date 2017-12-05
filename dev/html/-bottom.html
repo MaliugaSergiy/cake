@@ -1,0 +1,115 @@
+
+
+</div> <!-- <div class="content"> -->
+<footer>
+	<div class="footer_top" >
+		<div class="wr">
+			<div class="item">
+				<div class="name">О компании</div>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Карьера</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="name">Помощь</div>
+				<ul>
+					<li><a href="#">Условия оплаты</a></li>
+					<li><a href="#">Условия доставки</a></li>
+					<li><a href="#">Гарантия на товар</a></li>
+					<li><a href="#">Вопрос-ответ</a></li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="name">Контакты</div>
+				<ul>
+					<li><a href="tel:08000880000">0 800 088 00 00</a></li>
+					<li><a href="mailto:info@cake.com">info@cake.com</a></li>
+					<li>Украинаб Киев,</li>
+					<li>ул. Львовская 1-А, корп.4б оф.1</li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="name">Пишите нам</div>
+				<form action="" class="form_footer">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Email">
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer_bottom" >
+		<div class="wr">
+			<div class="logo"><img src="icons/logo.png" alt=""></div>
+			<div class="right">© 2017 Все права защищены | CAKE</div>
+			<div class="vt"><img src="icons/logo_vt.png" alt=""></div>
+		</div>
+	</div>
+</footer>
+</div> <!-- <div class="page"> -->
+</div>
+
+<!-- The menu -->
+<nav id="menu">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/about">About us</a>
+			<ul>
+				<li><a href="/about/history">History</a></li>
+				<li><a href="/about/team">The team</a></li>
+				<li><a href="/about/address">Our address</a></li>
+			</ul>
+		</li>
+		<li><a href="/contact">Contact</a></li>
+	</ul>
+</nav>
+
+
+<!-- REMODAL -->
+
+<div class="remodal" data-remodal-id="modal">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<h1>Remodal</h1>
+	<p>
+		Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+	</p>
+	<br>
+	<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+	<button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+</div>
+<script>
+	//Form VAlidation 
+
+	$(document).ready(function() {
+
+		$("#callBack").validate({
+			rules: {
+				callBack_name: {
+					required: true
+				},
+				callBack_phone: {
+					required: true,
+					minlenhth: 10,
+					digits: true
+				}
+			},
+			messages: {
+				callBack_name: {
+					required: "Обязательное поле"
+				},
+				callBack_phone: {
+					required: "Обязательное поле"
+				}
+			},
+			focusCleanup: true,
+			focusInvalid: false
+		});
+	});
+
+</script>
+
+
